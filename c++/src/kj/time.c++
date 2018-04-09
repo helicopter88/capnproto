@@ -31,7 +31,7 @@ const Clock& nullClock() {
   public:
     Date now() const override { return UNIX_EPOCH; }
   };
-  static KJ_CONSTEXPR(const) NullClock NULL_CLOCK;
+  static NullClock NULL_CLOCK;
   return NULL_CLOCK;
 }
 
